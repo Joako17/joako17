@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: blue;
+        background-image: linear-gradient(320deg, rgb(164, 219, 226), rgb(247, 247, 252));
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 60%;
+    padding: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 100px 60px 50px;
+}
+.encabezado{
+    border-radius: 100px;
+    background-color:rgba(0, 2, 117, 0.801) ;
+    background-image: linear-gradient( to bottom, rgb(91, 91, 201), rgb(208, 207, 240));
+}
+.logo1{
+    background-image: url(./img/mandala.gif);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.logo1:hover{
+    height: 220px;
+}
+h1{
+/*     font-size: 50px; */
+    padding: 30px;
+    text-align: center;
+    text-shadow: 5px 5px 5px blue;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* slogan */
+.slg{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 6%;
+    text-align: center;
+    margin-right: 20%;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
+
+.slg:hover{
+    transition: all 1s;
+    font-size: 20px;
+
+}
+/* nav */
+.barra ul{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgba(0, 2, 117, 0.801) ;
+        background-image: linear-gradient( to bottom, rgb(91, 91, 201), rgb(208, 207, 240));
+}
+.barra ul a{
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(2, 0, 0);
+    text-align: center;
+}
+.barra a:hover{
+    color: rgb(2, 0, 7);
+    transition: all 0.7s;
+    font-size: 30px;
+}
+/* redes */
+.redes{
+    padding: 25px;
+    margin: 25px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border: solid 5px;
+    border-radius: 20px;
+}
+
+.redes p{
+    background-image: linear-gradient( to bottom, rgb(91, 91, 201), rgb(208, 207, 240));
+    float: left;
+    font-size: 30px;
+    border-radius: 20px;
+    animation-name: mostrar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes mostrar{
+    0%{
+        opacity: 0;
+    }
+    1%{
+        transform: translate(150px
+        );
+        box-shadow:  10px ;
+    }
+
+}
+.redes div{
+    float: right;
+    flex-direction: row;
+    letter-spacing: 100px;
+    transform: skew(5deg);
+}
+.redess{
+    width: 50px;
+}
+.redessyou{
+    width: 100px;
+}
+.redessinst{
+    width: 65px;
+}
+/* seccion */
+h2 section{
+    background-color:rgba(0, 2, 117, 0.801) ;
+        background-image: linear-gradient( to bottom, rgb(91, 91, 201), rgb(208, 207, 240));
+}
+h2 {
+    height: 50px;
+    text-align: center;
+    background-color:rgba(0, 2, 117, 0.801) ;
+        background-image: linear-gradient( to left, rgb(91, 91, 201), rgb(208, 207, 240));
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 50px;
+    border-radius: 10px;
+}
+.sec1{
+    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.caja{
+    border: 5px solid rgb(27, 19, 4);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 120px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.caja1{
+    background-image: url(./img/Kinesiologa.jpeg);
+    flex-basis: 400px;
+    background-size: 100%;
+}
+.caja2{
+    background-image: url(./img/Nutricion.jpeg);
+    flex-basis: 400px;
+    background-size: 100%;
+}
+.caja3{
+    background-image: url(./img/Estetica.jpeg);
+    flex-basis: 400px;
+    background-position: center;
+    background-size: 100%;
+}
+.caja a:hover{
+    transition: all 0.7s;
+    font-style: 64px;
+}
+/* pie de pagina */
+footer{
+    background-color:rgba(0, 2, 117, 0.801) ;
+    background-image: linear-gradient( #cef0f8 , blue, white);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 100px 150px 150px;
+}
+h3{
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.formulario{
+    border: solid black;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    font-size: 24px;
+    text-align: center;
+}
+
+.cuadrito{
+    width: 205px;
+}
+input{
+    transition: all 2s;
+}
+input:focus{
+    font-size: 25px;
+    border: 5px dotted blueviolet;
+    color: rgb(0, 0, 0);
+}
+input::placeholder{
+    color: black;
+}
+
+footer div{
+    font-size: 100px;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-image: url(./img/maps.jpg);
+    background-size: cover;
+    background-position: center;
+}
+footer p{
+    border: solid black;
+    grid-column: 4/5;
+    grid-row: 2/4;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+} 
+
+
+
+
+/* boton de inicio */
+.subir{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 3px;
+    font-size: 30px;
+    border-radius: 50%;
+}
